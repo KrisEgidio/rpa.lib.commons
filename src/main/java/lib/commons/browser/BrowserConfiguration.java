@@ -7,12 +7,20 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 /***
  * 
- * Creates and return a new chromeOptions object with some standard configurations for robot performance
+ * Creates and return a new chromeOptions object with some standard
+ * configurations for robot performance
  * 
  * @author Kris
  *
  */
 public class BrowserConfiguration {
+
+	/***
+	 * 
+	 * Generate a new chromeOption instance with standard configurations
+	 * 
+	 * @return ChromeOptions
+	 */
 	public static ChromeOptions getChromeOptions() {
 
 		ChromeOptions options = new ChromeOptions();
@@ -29,7 +37,7 @@ public class BrowserConfiguration {
 		options.addArguments("--disable-extensions");
 		options.addArguments("--disable-gpu");
 		options.addArguments("--disable-infobars");
-		
+
 		Map<String, Object> chromePreferences = new HashMap<String, Object>() {
 			private static final long serialVersionUID = 1L;
 			{
@@ -49,5 +57,5 @@ public class BrowserConfiguration {
 		options.setExperimentalOption("prefs", chromePreferences);
 
 		return options;
-	}	
+	}
 }

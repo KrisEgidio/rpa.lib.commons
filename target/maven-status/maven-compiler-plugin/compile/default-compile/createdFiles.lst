@@ -1,4 +1,8 @@
+lib\commons\notification\TelegramNotification.class
+lib\commons\browser\DriverFactory.class
+lib\commons\notification\MailNotification$1.class
 lib\commons\files\CommonFiles.class
 lib\commons\browser\BrowserConfiguration$1.class
-lib\commons\browser\DriverFactory.class
 lib\commons\browser\BrowserConfiguration.class
+lib\commons\files\ConfigReader.class
+lib\commons\notification\MailNotification.class

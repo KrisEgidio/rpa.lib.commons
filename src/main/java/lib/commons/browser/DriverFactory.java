@@ -29,7 +29,7 @@ public class DriverFactory implements AutoCloseable {
 	 * 
 	 * Return an chromedriver instance created by DriverFactory constructor
 	 * 
-	 * @return
+	 * @return WebDriver
 	 */
 	public WebDriver getChromeDriver() {
 		return driver;
